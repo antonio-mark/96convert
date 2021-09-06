@@ -1,6 +1,5 @@
-const sixnine = document.getElementById("textArea");
-const converter = document.getElementById("texto96");
-const converter2 = document.getElementById("texto69");
+const sixnine = document.querySelector(".textArea");
+const converter = document.querySelector(".texto96");
 
 const dict = {
   "A": "666669999999999\n666669966666699\n666669966666699\n666669999999999\n666669966666699\n666669966666699",
@@ -32,28 +31,37 @@ const dict = {
   " ": "66666\n66666\n66666\n66666\n66666\n66666"
 };
 
+const textToLetter = text => dict[text] ?? '';
+const letterSplit = letter => letter.split('\n');
+const transpose = matrix => matrix[0].map((_row, index) => matrix.map(row => row[index]));
 
-sixnine.addEventListener("input", (e) => {
-  converter2.innerHTML = "";
+const lettersToLine = 
+  letter => document
+    .createElement('div')
+    .appendChild(document.createTextNode(letter.join(''))).parentNode;
 
-  const text = e.target.value;
-  const textUppercase = text.toUpperCase();
-  const textNormalize = textUppercase.normalize("NFD").replace(/\p{Diacritic}/gu, "");
-  const textSplit = textNormalize.split(""); // [ a, b, c ]
+const divToHTML = div => converter.appendChild(div);
 
+sixnine.addEventListener('input', ({
+  target: {
+    value: text
+  }
+}) => {
+  converter.innerHTML = ''
 
-  const letters = textSplit.map(textToLetter); // [ "aaa\naaa\naaa", "bbb\nbbb\nbbb", "ccc\nccc\nccc" ]
-  const letters2 = letters.join("\n\n");
+  const textSplit = text
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toUpperCase()
+    .split('')
 
-  converter.innerHTML = letters2;
+  transpose(
+    textSplit
+    .map(textToLetter)
+    .map(letterSplit))
+    .map(lettersToLine)
+    .map(divToHTML)
 });
 
-function textToLetter(text) {
-  let pre = document.createElement("pre");
-  let text2 = document.createTextNode(dict[text] ?? '');
-  pre.append(text2);
-  converter2.append(pre);
 
 
-  return dict[text] ?? ''
-}
