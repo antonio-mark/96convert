@@ -38,3 +38,5 @@ contate-me para eu me tornar um desenvolvedor melhor.
 Email: antonioborgo@hotmail.com.br
 
 Conecte-se comigo no [Linkedin](https://www.linkedin.com/in/antonio-mark/)
+
+**OBS: Não esqueça de visitar o perfil do [Gabe](https://github.com/ImGabe), que foi fundamental na criação do projeto.**
