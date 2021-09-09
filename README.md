@@ -1,9 +1,9 @@
 # 96convert
-![Screenshot-2.png](https://i.postimg.cc/xdX6ybfp/Screenshot-2.png)
-![Screenshot-3.png](https://i.postimg.cc/VN2D7L5f/Screenshot-3.png)
-![Screenshot-4.png](https://i.postimg.cc/DZs5Rkbq/Screenshot-4.png)
-![Screenshot-5.png](https://i.postimg.cc/kXyYnmYs/Screenshot-5.png)
-![Screenshot-7.png](https://i.postimg.cc/CxPvq4gf/Screenshot-7.png)
+![Previa](https://i.postimg.cc/xdX6ybfp/Screenshot-2.png)
+![Previa com ctrl F](https://i.postimg.cc/VN2D7L5f/Screenshot-3.png)
+![Previa com espaços](https://i.postimg.cc/DZs5Rkbq/Screenshot-4.png)
+![Previa em Tablets](https://i.postimg.cc/kXyYnmYs/Screenshot-5.png)
+![Previa em celulares](https://i.postimg.cc/CxPvq4gf/Screenshot-7.png)
 
 ## Sobre o Projeto
 A ideia do projeto é:
