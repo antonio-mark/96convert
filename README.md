@@ -20,10 +20,7 @@ com espaços também.
 - Para poder visualizar o texto aperte **CTRL + F** e digite **9**.
 
 ## Algumas observações
-- O site ainda está em desenvolvimento, apesar do principal já estar concluído.
-- Ele ainda não está 100% responsivo, por causa das linhas geradas com os números, se você digitar vários caracteres vai perceber isso facilmente.
-- Estou pensando em criar um botão que copie as frases sem o usuário precisar dar CTRL C, como também criar um menu ou legenda com as instruções do uso do site 
-(explicando ao usuário sobre o CTRL F e 9). 
+- Estou pensando em criar um menu ou legenda com as instruções do uso do site (explicando ao usuário sobre o CTRL F e 9). 
 
 ## Começando
 #### Pré-requisitos
