@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="96converter.css" rel="stylesheet" />
     <script src="96converter.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
     <title>96 converter</title>
   </head>
   <body>
@@ -15,7 +16,18 @@
     <section>
       <div class="textoTextArea">Escreva seu texto:</div>
       <input class="textArea" />
-      <pre class="texto96"></pre>
+      <pre class="text96"></pre>
+      <div class="button-tooltip-container">
+        <button
+          class="btn"
+          onclick="message()"
+          data-clipboard-target=".text96"
+          data-clipboard-demo
+        >
+          <img src="img/clippy.svg" alt="Copy to clipboard" />
+        </button>
+        <span class="custom-tooltip">Copied!</sapn>
+      </div>
     </section>
     <footer class="footer">Criado por Mark & Gabe</footer>
   </body>

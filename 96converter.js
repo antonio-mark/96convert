@@ -1,5 +1,6 @@
 const sixnine = document.querySelector(".textArea");
-const converter = document.querySelector(".texto96");
+const converter = document.querySelector(".text96");
+const button = new ClipboardJS(".btn");
 
 const dict = {
   A: "666669999999999\n666669966666699\n666669966666699\n666669999999999\n666669966666699\n666669966666699",
@@ -56,3 +57,10 @@ sixnine.addEventListener("input", ({ target: { value: text } }) => {
     .map(lettersToLine)
     .map(divToHTML);
 });
+
+function message() {
+  document.querySelector(".custom-tooltip").style.display = "inline";
+  setTimeout(function () {
+    document.querySelector(".custom-tooltip").style.display = "none";
+  }, 1000);
+}

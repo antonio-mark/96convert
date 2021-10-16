@@ -49,12 +49,39 @@ header,
   text-transform: uppercase;
   max-width: 90vmin;
 }
-.texto96 {
+.text96 {
   font-size: 15px;
   margin-top: 5%;
   max-width: 90%;
   width: 90vmax;
   text-align: center;
+  white-space: pre-wrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+.button-tooltip-container {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+}
+.btn {
+  position: absolute;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.btn img {
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+}
+.custom-tooltip {
+  display: none;
+  padding: 5px 12px;
+  margin-top: 52px;
+  margin-left: 140px;
+  background-color: #000000df;
+  border-radius: 4px;
+  color: #fff;
 }
 .footer {
   min-height: 50px;
@@ -63,4 +90,13 @@ header,
   justify-content: space-around;
   font-size: 3.5vh;
   font-weight: bold;
+  margin-top: 10px;
+}
+@media (max-width: 750px) {
+  .text96 {
+    font-size: 13px;
+    margin-top: 13%;
+    max-width: 70%;
+    width: 70vmax;
+  }
 }
