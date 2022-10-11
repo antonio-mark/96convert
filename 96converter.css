@@ -12,6 +12,8 @@ footer {
   max-width: 100%;
   max-height: 100%;
   display: flex;
+  background-color: rgb(14, 13, 13);
+  color: rgb(231, 225, 225);
   align-items: center;
   flex-direction: column;
 }
@@ -19,13 +21,7 @@ header,
 .footer {
   min-width: 100%;
   min-height: 100px;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(203, 18, 45, 1) 100%,
-    rgba(3, 3, 3, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(203, 18, 45, 1) 100%, rgba(3, 3, 3, 1) 100%);
 }
 .titulo {
   text-align: right;
@@ -90,6 +86,7 @@ header,
   justify-content: space-around;
   font-size: 3.5vh;
   font-weight: bold;
+  color: black;
   margin-top: 10px;
 }
 @media (max-width: 750px) {
